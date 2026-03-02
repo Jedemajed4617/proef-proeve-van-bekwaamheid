@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Concept 3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header" role="banner">
+        <div class="header-inner">
+            <div class="logo">
+                <div class="logo-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                    </svg>
+                </div>
+                <span class="logo-text">Logo</span>
+            </div>
+
+            <nav class="main-nav" role="navigation" aria-label="Hoofdnavigatie">
+                <a href="#" class="nav-item active" aria-current="page">Home</a>
+                <a href="#" class="nav-item">Curriculum</a>
+               ` <a href="#" class="nav-item">Nieuws</a>
+                <a href="#" class="nav-item">Contact</a>
+            </nav>
+
+            <a href="#" class="btn-login" role="button">Docent Login</a>
+        </div>
+    </header>
+
+    <main class="container" role="main">
+
+        <div class="grid-row">
+            <section class="card periode-card" aria-labelledby="periode-heading">
+                <h2 class="card-label" id="periode-heading">Huidige Periode</h2>
+                <p class="big-title" role="heading" aria-level="1">Periode</p>
+                <time class="date-text" datetime="2023-11-05">Periode 5.11.2023</time>
+
+                <div class="stats-row">
+                    <div class="stat-box">
+                        <span class="stat-label">Periode</span>
+                        <span class="stat-value">2 4</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-label">Leerjaar</span>
+                        <span class="stat-value">2023</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card nieuws-card" aria-labelledby="nieuws-heading">
+                <h2 class="card-label" id="nieuws-heading">Laatste Nieuws</h2>
+
+                <div class="news-list">
+                    <article class="news-item">
+                        <div class="news-thumb" role="img" aria-label="nieuws afbeelding"></div>
+                        <div class="news-content">
+                            <h3>Laatste Nieuws</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </article>
+                    <article class="news-item">
+                        <div class="news-thumb" role="img" aria-label="nieuws afbeelding"></div>
+                        <div class="news-content">
+                            <h3>Laatste Nieuws</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <a href="#" class="news-link" aria-label="Bekijk al het laatste nieuws">Laatste Nieuws:</a>
+            </section>
+        </div>
+
+        <section class="vakken-section" aria-labelledby="vakken-heading">
+            <div class="section-header">
+                <h2 id="vakken-heading">Mijn Vakken</h2>
+                <div class="nav-arrows" role="group" aria-label="Module navigatie">
+                    <button class="arrow-btn" id="prev-btn" aria-label="Vorige modules">&lt;</button>
+                    <button class="arrow-btn" id="next-btn" aria-label="Volgende modules">&gt;</button>
+                </div>
+            </div>
+
+            <div class="cards-scroller" role="region" aria-label="Module carousel">
+                <article class="module-card">
+                    <div class="card-img-placeholder" role="img" aria-label="Module afbeelding"></div>
+                    <div class="card-body">
+                        <h3>Module: Web Basics</h3>
+                        <span class="badge" role="status">Gewijzigd</span>
+                    </div>
+                </article>
+                <article class="module-card">
+                    <div class="card-img-placeholder" role="img" aria-label="Module afbeelding"></div>
+                    <div class="card-body">
+                        <h3>Module: Databases</h3>
+                        <span class="badge" role="status">Gewijzigd</span>
+                    </div>
+                </article>
+                <article class="module-card">
+                    <div class="card-img-placeholder" role="img" aria-label="Module afbeelding"></div>
+                    <div class="card-body">
+                        <h3>Module: Databases</h3>
+                        <span class="badge" role="status">Gewijzigd</span>
+                    </div>
+                </article>
+                <article class="module-card">
+                    <div class="card-img-placeholder" role="img" aria-label="Module afbeelding"></div>
+                    <div class="card-body">
+                        <h3>Module: Web Basics</h3>
+                        <span class="badge" role="status">Gewijzigd</span>
+                    </div>
+                </article>
+                <article class="module-card">
+                    <div class="card-img-placeholder" role="img" aria-label="Module afbeelding"></div>
+                    <div class="card-body">
+                        <h3>Module: Back</h3>
+                        <span class="badge" role="status">Gewijzigd</span>
+                    </div>
+                </article>
+            </div>
+
+            <nav class="pagination" aria-label="Module pagina's">
+                <button class="dot active" aria-label="Pagina 1" aria-current="true"></button>
+                <button class="dot" aria-label="Pagina 2"></button>
+                <button class="dot" aria-label="Pagina 3"></button>
+                <button class="dot" aria-label="Pagina 4"></button>
+            </nav>
+        </section>
+
+        <section class="list-section" aria-labelledby="modules-heading">
+            <div class="section-header">
+                <h2 id="modules-heading">Alle Modules</h2>
+                <button class="filter-box" aria-label="Filter openen" aria-expanded="false">
+                    <span>Filter</span>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        aria-hidden="true">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg>
+                </button>
+            </div>
+
+            <ul class="module-list" role="list">
+                <li class="list-item">
+                    <div class="list-icon" role="img" aria-label="Module icoon"></div>
+                    <a href="#" class="list-title">Module: Web Basics</a>
+                    <span class="list-arrow" aria-hidden="true">&gt;</span>
+                </li>
+                <li class="list-item">
+                    <div class="list-icon" role="img" aria-label="Module icoon"></div>
+                    <a href="#" class="list-title">Module: Databases</a>
+                    <span class="list-arrow" aria-hidden="true">&gt;</span>
+                </li>
+                <li class="list-item">
+                    <div class="list-icon" role="img" aria-label="Module icoon"></div>
+                    <a href="#" class="list-title">Module: Backend</a>
+                    <span class="list-arrow" aria-hidden="true">&gt;</span>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
