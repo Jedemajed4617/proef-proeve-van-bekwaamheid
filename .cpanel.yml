@@ -1,9 +1,9 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/tgsoqmsy/module_test
+    - export DEPLOYPATH=/home/tgsoqmsy/module
     - /usr/bin/rsync -av --delete public/ $DEPLOYPATH
-    - /opt/cpanel/composer/bin/composer install --optimize-autoloader
+    - /opt/cpanel/composer/bin/composer install --no-dev --optimize-autoloader main
     - /usr/local/bin/php artisan migrate --force
     - /usr/local/bin/php artisan config:clear
     - /usr/local/bin/php artisan cache:clear
