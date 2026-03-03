@@ -1,14 +1,25 @@
 html, body {
     height: 100%;
+    
 }
 
 body {
     display: flex;
     flex-direction: column;
+    font-family: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif,
+        'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 main {
     flex: 1;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    color: #d900d1 ;
 }
 
 footer {
@@ -24,14 +35,19 @@ footer ul {
     text-decoration: none;
     list-style: none;
     margin-top: 0.5rem;
+
 }
+
 
 footer li {
     margin-top: 0.5rem;
+
+    
 }
 
 footer p {
     margin-top: 0.5rem;
+
 }
 
 footer a {

@@ -1,10 +1,12 @@
 </body>
 <footer>
 <div>
-<h2>Logaar</h2>
+<h2>Leerjaren:</h2>
 <ul>
-    <li><a href="">Lorem ipsum dolor sit</a></li>
-    <li><a href="">Lorem ipsum dolor sit</a></li>
+    <li><a href="">Leerjaar: 1</a></li>
+    <li><a href="">Leerjaar: 2</a></li>
+    <li><a href="">Leerjaar: 3</a></li>
+    <li><a href="">Leerjaar: 4</a></li>
 
 </ul>
 </div>
