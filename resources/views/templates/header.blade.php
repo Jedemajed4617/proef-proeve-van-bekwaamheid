@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/footer.css">
     <script src="js/main.js" defer></script>
 </head>
 <body>

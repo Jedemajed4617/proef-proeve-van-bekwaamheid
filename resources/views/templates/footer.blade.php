@@ -12,7 +12,7 @@
 <div>
 <h2>Onze producten</h2>
 <ul>
-    <li><a href="">Lorem ipsum dolor sit</a></li>
+    <li><a href="" className="">Lorem ipsum dolor sit</a></li>
     <li><a href="">Lorem ipsum dolor sit</a></li>
     <li><a href="">Lorem ipsum dolor sit</a></li>
 
