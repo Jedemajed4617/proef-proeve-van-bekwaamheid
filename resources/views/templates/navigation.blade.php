@@ -17,6 +17,5 @@
             <a href="#" class="nav-item">Contact</a>
         </nav>
 
-        <a href="#" class="btn-login" role="button">Docent Login</a>
     </div>
 </header>
