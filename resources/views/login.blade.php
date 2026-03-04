@@ -1,7 +1,10 @@
 @include('templates.header')
 @include('templates.navigation')
 
-<form method="POST" action="">
+<body>
+    <main>
+<div class="login-card" aria-labelledby="periode-heading">
+<form method="POST" action="" class="login-text">
     @csrf
 
     <input type="email" name="email" value="{{ old('email') }}" required autofocus
@@ -35,4 +38,9 @@
             </a>
         </p>
     @endif
+    <img src="/images/logos/Ma_foto_login.jpg" alt="Ma logo">
+</div>
 </form>
+ </section>
+</main>
+</body>
