@@ -4,10 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\User_controller;
 
 
-// Home
-Route::get('/', function () {
-    return view('index');
-});
+// Main routes
+Route::get('/', function () { return view('index'); });
+Route::get('/curriculum', function () { return view('curriculum'); });
 
 // Login route
 Route::get('/login', [User_controller::class, 'login']);
