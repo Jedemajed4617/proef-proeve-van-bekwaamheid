@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="resources/css/app.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/news.css">
     <?
         if(request()->segment(1) == 'login'){
             ?>

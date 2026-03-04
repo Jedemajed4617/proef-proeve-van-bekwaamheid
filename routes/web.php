@@ -7,11 +7,11 @@ use App\Http\Controllers\User_controller;
 // Main routes (Standard views)
 Route::view('/', 'index');
 Route::view('/curriculum', 'curriculum');
+Route::view('/news', 'news');
 
 // Auth/login routes
 Route::view('/login', 'login');
 Route::get('/login/auth', [User_controller::class, 'authenticate']);
-
 
 
 // Route group beheer
