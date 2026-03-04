@@ -10,9 +10,9 @@
                 class="nav-item {{ request()->segment(1) === null ? 'active' : '' }}">
                 Home
              </a>
-             <a href="/curriculum" class="nav-item">Curriculum</a>
-             <a href="#" class="nav-item">Nieuws</a>
-             <a href="#" class="nav-item">Contact</a>
+             <a href="/curriculum" class="nav-item {{ request()->segment(1) === 'curriculum' ? 'active' : '' }}" >Curriculum</a>
+             <a href="#" class="nav-item {{ request()->segment(1) === 'news' ? 'active' : '' }}" >Nieuws</a>
+             <a href="#" class="nav-item {{ request()->segment(1) === 'contact' ? 'active' : '' }}" >Contact</a>
          </nav>
      </div>
  </header>
