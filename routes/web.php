@@ -4,19 +4,20 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\User_controller;
 
 
-// Main routes
-Route::get('/', function () { return view('index'); });
-Route::get('/curriculum', function () { return view('curriculum'); });
+// Main routes (Standard views)
+Route::view('/', 'index');
+Route::view('/curriculum', 'curriculum');
 
-// Login route
-Route::get('/login', [User_controller::class, 'login']);
+// Auth/login routes
+Route::view('/login', 'login');
+Route::get('/login/auth', [User_controller::class, 'authenticate']);
+
 
 
 // Route group beheer
 Route::prefix('beheer')
 ->middleware('auth.custom')
 ->group(function () {
-    Route::get('/dashboard', function () {
-        return view('beheer.dashboard');
-    });
+    Route::view('/dashboard', 'beheer.dashboard');
+    Route::post('/logout', [User_controller::class, 'logout']);
 });
