@@ -1,88 +1,3 @@
-/* HEADER */
-.header {
-    border-bottom: 2px solid #F0F0F0;
-    padding: 15px 0;
-    background: white;
-}
-
-.header-inner {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.logo-icon {
-    width: 100px;
-    height: 35px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo-text {
-    font-weight: 800;
-    font-size: 1.2rem;
-}
-
-.main-nav {
-    display: flex;
-    gap: 30px;
-}
-
-.nav-item {
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
-    font-size: 0.9rem;
-    position: relative;
-}
-
-.nav-item.active {
-    color: var(--pink);
-}
-
-.nav-item.active::after {
-    content: '';
-    display: block;
-    width: 20px;
-    height: 3px;
-    background: var(--pink);
-    margin: 4px auto 0;
-    border-radius: 2px;
-}
-
-.btn-login {
-    background: var(--pink);
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-weight: 700;
-    font-size: 0.9rem;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    display: inline-block;
-}
-
-.btn-login:hover,
-.btn-login:focus {
-    background: #B800B0;
-    transform: translateY(-2px);
-}
-
-.btn-login:active {
-    transform: translateY(0);
-}
-
 /* CONTAINER */
 .container {
     max-width: 1000px;
@@ -100,7 +15,6 @@
 
 .card {
     border: 1px solid #000;
-    /* Thin black border as in sketch */
     border-radius: var(--radius);
     padding: 20px;
     background: white;
@@ -108,13 +22,11 @@
 
 /* Periode Card */
 .card-label {
-    font-size: 0.9rem;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
 .big-title {
-    font-size: 2.5rem;
     font-weight: 800;
     margin-bottom: 5px;
 }
@@ -245,15 +157,12 @@
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
-    /* Firefox */
     -ms-overflow-style: none;
-    /* IE and Edge */
     padding: 20px 0;
 }
 
 .cards-scroller::-webkit-scrollbar {
     display: none;
-    /* Chrome, Safari, Opera */
 }
 
 .module-card {
@@ -276,7 +185,6 @@
     height: 120px;
     background: var(--grey-placeholder);
     border-bottom: 1px solid #000;
-    /* Separator line */
 }
 
 .card-body {
@@ -333,10 +241,7 @@
     background: var(--grey-bg);
     padding: 30px;
     border-radius: var(--radius);
-    /* Rounded background area */
     margin: -1px;
-    /* Stretch to fill container padding if needed, else keep standard */
-    /* Looking at image, it looks like a grey container block */
     margin-bottom: 20px;
 }
 
@@ -407,17 +312,6 @@
     font-weight: bold;
     color: #999;
 }
-
-
-
-
-
-
-
-
-
-
-/* RESPONSIVE DESIGN */
 
 /* Tablet and Small Desktop */
 @media (max-width: 1024px) {

@@ -1,0 +1,25 @@
+.cookies_page {
+    padding: 80px 20px;
+}
+
+.cookies_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.cookies_intro {
+    text-align: left;
+}
+
+.cookies_title {
+    margin-bottom: 20px;
+    color: var(--pink);
+}
+
+.cookies_text {
+    font-size: 18px;
+    line-height: 1.6;
+}
