@@ -14,6 +14,7 @@
             <?
         }
     ?>
+    <link rel="stylesheet" href="css/footer.css">
     <script src="js/main.js" defer></script>
 </head>
 <body>

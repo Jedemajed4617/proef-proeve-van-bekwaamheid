@@ -6,7 +6,7 @@
         <section class="card periode-card" aria-labelledby="periode-heading">
             <h2 class="card-label" id="periode-heading">Huidige Periode</h2>
             <p class="big-title" role="heading" aria-level="1">Periode</p>
-            <time class="date-text" datetime="2023-11-05">Periode 5.11.2023</time>
+            <time class="date-text" datetime="2023-11-05">Periode 5.11.2026</time>
 
             <div class="stats-row">
                 <div class="stat-box">
@@ -15,7 +15,7 @@
                 </div>
                 <div class="stat-box">
                     <span class="stat-label">Leerjaar</span>
-                    <span class="stat-value">2023</span>
+                    <span class="stat-value">2026</span>
                 </div>
             </div>
         </section>
