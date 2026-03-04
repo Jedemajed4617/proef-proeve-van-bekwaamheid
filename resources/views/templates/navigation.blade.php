@@ -9,14 +9,12 @@
             </div>
             <span class="logo-text">Logo</span>
         </div>
-
         <nav class="main-nav" role="navigation" aria-label="Hoofdnavigatie">
             <a href="#" class="nav-item active" aria-current="page">Home</a>
             <a href="#" class="nav-item">Curriculum</a>
             <a href="#" class="nav-item">Nieuws</a>
             <a href="#" class="nav-item">Contact</a>
         </nav>
-
         <a href="#" class="btn-login" role="button">Docent Login</a>
     </div>
 </header>

@@ -92,5 +92,5 @@ h6 {
 }
 
 button{
-    outline: none;
+    outline: none !important;
 }

@@ -601,9 +601,3 @@
         border: 2px solid var(--pink);
     }
 }
-
-/* Focus visible for keyboard navigation */
-*:focus-visible {
-    outline: 3px solid var(--pink);
-    outline-offset: 2px;
-}
