@@ -7,6 +7,7 @@ use App\Http\Controllers\User_controller;
 // Main routes
 Route::get('/', function () { return view('index'); });
 Route::get('/curriculum', function () { return view('curriculum'); });
+Route::get('/news', function () { return view('news'); });
 
 // Login route
 Route::get('/login', [User_controller::class, 'login']);
