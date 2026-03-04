@@ -1,47 +1,26 @@
-</body>
-<footer>
-<div>
-<h2>Leerjaren:</h2>
-<ul>
-    <li><a href="">Leerjaar: 1</a></li>
-    <li><a href="">Leerjaar: 2</a></li>
-    <li><a href="">Leerjaar: 3</a></li>
-    <li><a href="">Leerjaar: 4</a></li>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-</ul>
-</div>
+<footer class="footer">
+    <div class="footer-container">
 
-<div>
-<h2>Onze producten</h2>
-<ul>
-    <li><a href="" >Lorem ipsum dolor sit</a></li>
-    <li><a href="">Lorem ipsum dolor sit</a></li>
-    <li><a href="">Lorem ipsum dolor sit</a></li>
+        <div class="footer-logo">
+            Mediacollege Amsterdam
+        </div>
 
-</ul>
-</div>
+        <div class="footer-center">
+            <a href="#">Magister</a>
+            <a href="#">Colofon & Privacyverklaring</a>
+            <a href="#">Contact</a>
+            <a href="#">Over ons</a>
+        </div>
 
-<div>
-<h2>Onze socials</h2>
-<ul>
-    <li><a href="">Lorem ipsum dolor sit</a></li>
-    <li><a href="">Lorem ipsum dolor sit</a></li>
-    <li><a href="">Lorem ipsum dolor sit</a></li>
-</ul>
-</div>
+        <div class="footer-socials">
+            <a href="https://www.instagram.com/mediacollege/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCVJXf2h5yIjAIYKK5DCmokQ" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/MediacollegeAmsterdam/" target="_blank"><i class="fab fa-facebook-f" ></i></a>
+            <a href="https://www.linkedin.com/company/mediacollege-amsterdam" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://x.com/mediacollege" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
 
-<div>
-<h2>Overige links</h2>
-<ul>
-    <a href=https://github.com/Jedemajed4617/proef-proeve-van-bekwaamheid>Github</a></li>
-    
-
-</ul>
-</div>
-<div>
-<h2>Over ons</h2>
-<p>Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus.</p>
-</div>
+    </div>
 </footer>
-
-</html>
