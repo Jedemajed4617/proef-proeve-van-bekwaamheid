@@ -1,3 +1,4 @@
+ <div class="cookies_header_container"><div class="cookies_link_container"><a href="/cookies" class="cookies_link">Cookies</a></div></div>
  <header class="header" role="banner">
      <div class="header-inner">
          <div class="logo">
