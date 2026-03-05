@@ -19,6 +19,6 @@ Route::get('/login/auth', [User_controller::class, 'authenticate']);
 Route::prefix('beheer')
 ->middleware('auth.custom')
 ->group(function () {
-    Route::view('/dashboard', 'beheer.dashboard');
+    Route::view('/', 'beheer.index');
     Route::post('/logout', [User_controller::class, 'logout']);
 });

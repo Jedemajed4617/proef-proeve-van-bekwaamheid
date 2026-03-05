@@ -32,7 +32,7 @@
 }
 
 .date-text {
-    font-size: 0.8rem;
+    font-size: 14px;
     margin-bottom: 20px;
 }
 
@@ -50,14 +50,14 @@
 
 .stat-label {
     display: block;
-    font-size: 0.7rem;
+    font-size: 17px;
     font-weight: 700;
     margin-bottom: 2px;
 }
 
 .stat-value {
     display: block;
-    font-size: 1.2rem;
+    font-size: 20px;
     font-weight: 800;
 }
 
@@ -296,7 +296,7 @@
 
 .list-title {
     font-weight: 700;
-    font-size: 0.95rem;
+    font-size: 15px;
     flex-grow: 1;
     text-decoration: none;
     color: inherit;
@@ -309,6 +309,7 @@
 }
 
 .list-arrow {
+    font-size: 15px;
     font-weight: bold;
     color: #999;
 }

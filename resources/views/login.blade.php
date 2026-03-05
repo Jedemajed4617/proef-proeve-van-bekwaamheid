@@ -1,46 +1,55 @@
 @include('templates.header')
 @include('templates.navigation')
 
-<body>
-    <main>
-<div class="login-card" aria-labelledby="periode-heading">
-<form method="POST" action="" class="login-text">
-    @csrf
-
-    <input type="email" name="email" value="{{ old('email') }}" required autofocus
-           placeholder="Email"
-           class="w-full bg-gray-900 rounded-xl p-3 text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4">
-    @error('email')
-        <p class="text-red-400 text-sm mb-2">{{ $message }}</p>
-    @enderror
-
-    <input type="password" name="password" required
-           placeholder="Password"
-           class="w-full bg-gray-900 rounded-xl p-3 text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4">
-    @error('password')
-        <p class="text-red-400 text-sm mb-2">{{ $message }}</p>
-    @enderror
-
-    <label class="flex items-center gap-2 mb-4 text-sm text-gray-300">
-        <input type="checkbox" name="remember" class="rounded">
-        Remember me
-    </label>
-
-    <button type="submit"
-            class="w-full bg-blue-500 text-white py-2 rounded-xl hover:bg-blue-600 transition">
-        Log In
-    </button>
-
-    @if (Route::has('password.request'))
-        <p class="text-sm text-gray-400 mt-4 text-center">
-            <a href="{{ route('password.request') }}" class="text-blue-400 hover:underline">
-                Forgot your password?
+<main style="display: flex; justify-content: center;
+ align-items: center;">
+    <div class="login_card" aria-labelledby="periode-heading">
+        <form method="POST" action="/login/auth" class="login_form">
+            @csrf
+            <label class="input_container_login">
+                <p id="anim_text">E-mail</p>
+                <input class="login_input" id="input_anim" type="email" name="email" required>
+            </label>
+            <label class="input_container_login">
+                <p id="anim_text2">Wachtwoord</p>
+                <input class="login_input" id="input_anim2" type="password" name="password" required>
+            </label>
+            <a href="/login/password_reset" class="">
+                Wachtwoord vergeten?
             </a>
-        </p>
-    @endif
-    <img src="/images/logos/Ma_foto_login.jpg" alt="Ma logo">
-</div>
-</form>
- </section>
+            <label class="remember_login">
+                <input type="checkbox" name="remember" class="rounded">
+                Onthoud mij
+            </label>
+            <label class="login_submit_container">
+                <button type="submit" class="login_submit">Inloggen</button>
+            </label>
+        </form>
+        <figure class="image_section_login">
+            <img src="/images/logos/Ma_foto_login.jpg" alt="Ma logo">
+        </figure>
+    </div>
 </main>
-</body>
+<script>
+    function setupFloatingLabel(inputId, labelId) {
+      const input = document.getElementById(inputId);
+      const label = document.getElementById(labelId);
+
+      input.addEventListener("focus", () => {
+        label.style.transition = "0.2s all";
+        label.style.top = "-30px";
+        label.style.left = "0";
+      });
+
+      input.addEventListener("blur", () => {
+        if (input.value.trim() === "") {
+          label.style.transition = "0.2s all";
+          label.style.top = "25%";
+          label.style.left = "8px";
+        }
+      });
+    }
+
+    setupFloatingLabel("input_anim", "anim_text");
+    setupFloatingLabel("input_anim2", "anim_text2");
+</script>

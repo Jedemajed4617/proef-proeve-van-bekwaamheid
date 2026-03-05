@@ -8,6 +8,7 @@
 html {
     line-height: 1.5;
     font-size: 62.5%;
+    background-color: #d9d9d9;
 }
 
 /* Algemeen */
@@ -48,38 +49,38 @@ h1{
 }
 
 h2{
-    font-size: 25px !important;
-    font-family: heading_ma;
-}
-
-h3{
     font-size: 22px !important;
     font-family: heading_ma;
 }
 
+h3{
+    font-size: 18px !important;
+    font-family: heading_ma;
+}
+
 h4{
-    font-size: 20px !important;
+    font-size: 16px !important;
     font-family: heading_ma;
 }
 
 p{
     font-family: sans-serif !important;
-    font-size: 17px !important;
+    font-size: 15px !important;
 }
 
 @media screen and (max-width: 700px){
     h1{
         font-family: "Outfit", sans-serif;
-        font-size: 35px;
+        font-size: 30px;
     }
 
     h2{
-        font-size: 25px;
+        font-size: 20px;
         font-family: "Outfit", sans-serif;
     }
 
     h3{
-        font-size: 17px;
+        font-size: 15px;
         font-family: "Outfit", sans-serif;
     }
 
