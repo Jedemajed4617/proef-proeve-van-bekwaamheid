@@ -15,38 +15,123 @@
     flex-direction: column;
 }
 
+.form_title{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.form_title > h1{
+    color: var(--pink);
+}
+
+.form_title > p{
+    color: #666f;
+}
+
+.inputs_section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding-bottom: 5px;
+}
+
 .input_container_login{
     width: 100%;
     position: relative;
-    margin: 0 0 25px 0;
 }
 
 .input_container_login > p{
    position: absolute;
    left: 8px;
    top: 25%;
+   font-size: 12px !important;
 }
 
 .login_input{
-    max-width: 250px;
     width: 100%;
-    padding: 15px 5px;
+    padding: 8px 5px;
+    font-size: 15px;
+    border: 1px solid #D3D3D3;
+    border-radius: 8px;
 }
 
-.login_input{
-
+.login_input:focus{
+    border: 1px solid var(--pink);
+    transition: 0.2s all;
 }
 
-.remember_login{
+.login_actions{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding-bottom: 25px;
+    padding-top: 10px;
+    font-size: 11px;
+}
 
+.psw_forget:hover{
+    text-decoration: underline;
+}
+
+.remember_login {
+    display: flex;
+    align-items: center;
+    gap: 4px    ;
+    cursor: pointer;
+    user-select: none;
+}
+
+.remember_login input[type="checkbox"] {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+    user-select: auto;
+}
+
+.remember_login input[type="checkbox"]:checked {
+    background: var(--pink);
+    border-color: var(--pink);
+}
+
+.remember_login input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 3px;
+    width: 4px;
+    height: 8px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
 }
 
 .login_submit_container{
-
+    width: 100%;
+    height: auto;
+    display: flez;
+    justify-content: center;
 }
 
 .login_submit{
-
+    width: 100%;
+    background-color: var(--pink);
+    padding: 5px 10px;
+    font-size: 17px;
+    text-align: center;
+    color: white;
+    border-radius: 8px;
 }
 
 .password_forgot_login{
