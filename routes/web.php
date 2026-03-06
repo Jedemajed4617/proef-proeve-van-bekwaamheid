@@ -12,7 +12,7 @@ Route::view('/cookies', 'cookies');
 
 // Auth/login routes
 Route::view('/login', 'login');
-Route::get('/login/auth', [User_controller::class, 'authenticate']);
+Route::post('/login/auth', [User_controller::class, 'authenticate']);
 
 
 // Route group beheer
@@ -20,5 +20,5 @@ Route::prefix('beheer')
 ->middleware('auth.custom')
 ->group(function () {
     Route::view('/', 'beheer.index');
-    Route::post('/logout', [User_controller::class, 'logout']);
+    Route::get('/logout', [User_controller::class, 'logout']);
 });

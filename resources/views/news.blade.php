@@ -2,7 +2,7 @@
 @include('templates.navigation')
 
 <main class="container">
-    <h1>Nieuws</h1>
+    <h1>Ons laatste nieuws</h1>
     <div class="news-grid">
         @php
             $newsItems = [

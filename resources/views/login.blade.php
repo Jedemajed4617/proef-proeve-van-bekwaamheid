@@ -9,6 +9,12 @@
             <div class="form_title">
                 <h1>Inloggen in beheer</h1>
                 <p>Welkom terug, vul uw gegevens in.</p>
+                @error('email')
+                    <p style="color: red;">{{ $message }}</p>
+                @enderror
+                @if(session('success'))
+                    <p style="color: green;">{{ session('success') }}</p>
+                @endif
             </div>
             <div class="inputs_section">
                 <label class="input_container_login">
@@ -34,7 +40,7 @@
             </label>
         </form>
         <figure class="image_section_login">
-            <img src="/images/logos/Ma_foto_login.jpg" alt="Ma logo">
+            <img src="/images/illustratiefoto_SD.jpg" alt="Ma logo">
         </figure>
     </div>
 </main>

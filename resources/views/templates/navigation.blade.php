@@ -1,4 +1,17 @@
- <div class="cookies_header_container"><div class="cookies_link_container"><a href="/cookies" class="cookies_link">Cookies</a><a href="/login" class="cookies_link">Beheer</a></div></div>
+<div class="cookies_header_container"><div class="cookies_link_container">
+    <a href="/cookies" class="cookies_link">Cookies</a>
+    <?
+        if(session() != '' && request()->segment(1) == 'beheer'){
+            ?>
+                <a href="/beheer/logout" class="cookies_link">Uitloggen</a>
+            <?
+        }else{
+            ?>
+                <a href="/login" class="cookies_link">Beheer</a>
+            <?
+        }
+    ?>
+</div></div>
  <header class="header" role="banner">
      <div class="header-inner">
          <div class="logo">
