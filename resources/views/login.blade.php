@@ -1,5 +1,43 @@
 @include('templates.header')
 @include('templates.navigation')
+<!-- Gradient bg -->
+<style>
+   body {
+       min-height: 100vh;
+       margin: 0;
+       background:
+           radial-gradient(circle at 85% 20%, var(--pink) 0%, transparent 45%),
+           radial-gradient(circle at 95% 60%, var(--pink) 0%, transparent 40%),
+           radial-gradient(circle at 10% 90%, var(--pink) 0%, transparent 35%),
+           #f6f2fb;
+       position: relative;
+       overflow: hidden;
+   }
+
+   body::before,
+   body::after {
+       content: "";
+       position: absolute;
+       border: 2px solid var(--pink);
+       border-radius: 50%;
+       opacity: 0.35;
+       z-index: -1;
+   }
+
+   body::before {
+       width: 600px;
+       height: 600px;
+       left: -250px;
+       bottom: -200px;
+   }
+
+   body::after {
+       width: 700px;
+       height: 700px;
+       right: -300px;
+       top: -250px;
+   }
+</style>
 
 <main style="display: flex; justify-content: center;
  align-items: center;">
