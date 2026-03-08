@@ -11,7 +11,7 @@ Route::view('/news', 'news');
 Route::view('/cookies', 'cookies');
 
 // Auth/login routes
-Route::view('/login', 'login');
+Route::get('/login', [User_controller::class, 'login']);
 Route::post('/login/auth', [User_controller::class, 'authenticate']);
 
 

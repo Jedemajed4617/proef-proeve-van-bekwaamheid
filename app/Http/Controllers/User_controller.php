@@ -8,11 +8,18 @@ use Illuminate\Support\Facades\Auth;
 class User_controller extends Controller
 {
     public function login(){
-        return view('login');
+        if (session('logged_in')){
+            return redirect('/beheer');
+        } else{
+            return view('login');
+        }
+
     }
 
-    public function logout(){
+    public function logout(Request $request){
         Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
         return redirect('/login')->with('success', 'U bent successvol uitgelogd');
     }
 
@@ -29,7 +36,10 @@ class User_controller extends Controller
 
         if(Auth::attempt($creds, $request->boolean('remember'))){
             $request->session()->regenerate();
-
+            session()->put(
+                key: 'logged_in',
+                value: true
+            );
             return redirect()->intended('/beheer')->with('success', 'Welkom terug.');
         }
 
