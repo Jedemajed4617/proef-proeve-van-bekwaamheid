@@ -8,6 +8,7 @@ use App\Http\Controllers\User_controller;
 Route::view('/', 'index');
 Route::view('/curriculum', 'curriculum');
 Route::view('/news', 'news');
+Route::view('/contact', 'contact');
 Route::view('/cookies', 'cookies');
 
 // Auth/login routes

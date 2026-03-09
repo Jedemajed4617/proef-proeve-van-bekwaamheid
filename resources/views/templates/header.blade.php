@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/news.css">
     <link rel="stylesheet" href="css/cookies.css">
     <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/contact.css">
     <?
         if(request()->segment(1) == 'login'){
             ?>

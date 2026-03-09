@@ -1,9 +1,7 @@
-
 main.container h1 {
     text-align: center;
     margin-bottom: 2rem;
     font-size: 2.5rem;
-    color: #333;
 }
 
 .news-grid {
@@ -13,6 +11,12 @@ main.container h1 {
     margin-bottom: 2rem;
 }
 
+.news-page-links {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+}
+
 .news-page-item {
     background: white;
     border-radius: 8px;
@@ -20,6 +24,7 @@ main.container h1 {
     transition: transform 0.3s ease;
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .news-page-item:hover {
@@ -46,31 +51,23 @@ main.container h1 {
 
 .news-page-content {
     padding: 1.5rem;
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
-}
-
-.news-page-content h3 {
-    margin: 0 0 0.5rem 0;
-    font-size: 1.5rem;
-    color: #333;
+    gap: 1rem;
+    flex: 1;
 }
 
 .news-page-content p {
-    margin: 0 0 1rem 0;
     color: #666;
-    font-size: 1rem;
-    flex-grow: 1;
     line-height: 1.6;
 }
 
 .news-page-link {
+    font-size: 16px;
     color: #0066cc;
-    text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
-    align-self: flex-start;
+    margin-top: auto;
 }
 
 .news-page-link:hover {
@@ -80,9 +77,5 @@ main.container h1 {
 @media (max-width: 768px) {
     .news-grid {
         grid-template-columns: 1fr;
-    }
-
-    main.container h1 {
-        font-size: 2rem;
     }
 }
