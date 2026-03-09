@@ -344,9 +344,7 @@
 
 /* Mobile */
 @media (max-width: 768px) {
-    body {
-        padding-bottom: 20px;
-    }
+
 
     .header {
         padding: 12px 0;

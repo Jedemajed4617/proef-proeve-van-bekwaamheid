@@ -10,9 +10,10 @@
             <a href="#">Magister</a>
             <a href="#">Colofon & Privacyverklaring</a>
             <a href="#">Contact</a>
-            <a href="#">Over ons</a>
-        </div>
+            <a href="#">Over ons:</a>
+    </div>
 
+            
         <div class="footer-socials">
             <a href="https://www.instagram.com/mediacollege/" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://www.youtube.com/channel/UCVJXf2h5yIjAIYKK5DCmokQ" target="_blank"><i class="fab fa-youtube"></i></a>
@@ -23,3 +24,4 @@
 
     </div>
 </footer>
+
